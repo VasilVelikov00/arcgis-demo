@@ -48,6 +48,8 @@ bun install
 
 **NOTE**
 > You'll need [bun](https://bun.com/docs/installation) installed on your system
+>
+> You can use npm or yarn if you prefer, the scripts don't change
 
 Copy the `.env.example` file into a new `.env.local` file:
 
