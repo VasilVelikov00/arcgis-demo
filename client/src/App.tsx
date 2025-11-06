@@ -10,7 +10,7 @@ export default function App() {
     const handleViewReady = async (event: TargetedEvent<HTMLArcgisMapElement>) => {
     const mapElement = event.target;
 
-    const geoJSONLayer = new GeoJSONLayer({ url: "http://localhost:8000/features" });
+    const geoJSONLayer = new GeoJSONLayer({ url: `${import.meta.env.VITE_SERVER_URL}/features` });
 
     const featureSet = await geoJSONLayer.queryFeatures();
 
